@@ -28,6 +28,21 @@ switch( $_GET['type'] )
     
     break;
       
+
+  case 'link':
+  
+    $query = 'SELECT icon 
+      FROM links
+      WHERE id = '.$_GET['id'].'
+      LIMIT 1';
+    $result = mysqli_query( $connect, $query );
+    $record = mysqli_fetch_assoc( $result );
+
+    if( !$record['icon'] ) $record['icon'] = $camera;
+    
+    $record['photo'] = $record['icon'];
+
+    break;
 }
 
 include 'includes/wideimage/WideImage.php';

@@ -66,5 +66,19 @@ include( 'admin/includes/functions.php' );
 
   <?php endwhile; ?>
 
+  <h2>Links</h2>
+  <?php
+
+    $query = 'SELECT *
+      FROM links
+      ORDER BY id';
+    $result = mysqli_query( $connect, $query );
+
+  ?>
+
+  <?php while($record = mysqli_fetch_assoc($result)): ?>
+    <a href="<?php echo $record['url'] ?>" target="_blank"><img src="admin/image.php?type=link&id=<?php echo $record['id']; ?>&width=100&height=100" alt="<?php echo $record['name'] ?>"></a>
+  <?php endwhile; ?>
+
 </body>
 </html>
