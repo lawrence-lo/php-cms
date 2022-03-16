@@ -35,7 +35,7 @@ if( isset( $_POST['name'] ) )
 ?>
 
 <h2>Add Link</h2>
-
+<div id="error-messages"></div>
 <form method="post">
   
   <label for="name">Name:</label>
@@ -54,7 +54,7 @@ if( isset( $_POST['name'] ) )
 
 <p><a href="links.php"><i class="fas fa-arrow-circle-left"></i> Return to Link List</a></p>
 
-
+<script src="./js/validateLinksAdd.js"></script>
 <?php
 
 include( 'includes/footer.php' );
