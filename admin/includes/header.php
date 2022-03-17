@@ -10,7 +10,7 @@
   <link href="styles.css" type="text/css" rel="stylesheet">
   
   <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
-  
+  <script src="https://kit.fontawesome.com/2e4f09cec7.js" crossorigin="anonymous"></script>
 </head>
 <body>
   
