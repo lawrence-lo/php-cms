@@ -8,10 +8,10 @@ secure();
 
 include( 'includes/header.php' );
 
-if( isset( $_POST['type'] ) )
+if( isset( $_POST['subject'] ) )
 {
   
-  if( $_POST['type'] and $_POST['subject'] )
+  if( $_POST['subject'] and $_POST['date'] )
   {
     
     $query = 'INSERT INTO certifications (
@@ -68,7 +68,7 @@ if( isset( $_POST['type'] ) )
 
 <p><a href="education.php"><i class="fas fa-arrow-circle-left"></i> Return to Certification List</a></p>
 
-
+<script src="./js/validateEducationAdd.js"></script>
 <?php
 
 include( 'includes/footer.php' );

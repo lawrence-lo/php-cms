@@ -16,10 +16,10 @@ if( !isset( $_GET['id'] ) )
   
 }
 
-if( isset( $_POST['type'] ) )
+if( isset( $_POST['subject'] ) )
 {
   
-  if( $_POST['type'] and $_POST['subject'] )
+  if( $_POST['subject'] and $_POST['date'] )
   {
     
     $query = 'UPDATE certifications SET
