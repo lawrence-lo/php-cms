@@ -17,6 +17,11 @@ include( 'includes/header.php' );
     </a>
   </li>
   <li>
+    <a href="education.php">
+      Manage Education
+    </a>
+  </li>
+  <li>
     <a href="links.php">
       Manage Links
     </a>
