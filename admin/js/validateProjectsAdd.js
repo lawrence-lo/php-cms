@@ -32,12 +32,6 @@ window.onload = function () {
             errors++;
         }
 
-        // Validate url
-        if (url.value === "" || url.value === null) {
-            message += "<li>Invalid URL.</li>";
-            errors++;
-        }
-
         // Validate date
         if (date.value === "" || date.value === null) {
             message += "<li>Invalid Date.</li>";
