@@ -39,7 +39,7 @@ if( isset( $_POST['subject'] ) )
 ?>
 
 <h2>Add Certication</h2>
-
+<div id="error-messages"></div>
 <form method="post">
   
   <label for="type">Type:</label>
