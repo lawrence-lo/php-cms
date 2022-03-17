@@ -64,7 +64,7 @@ if( isset( $_GET['id'] ) )
 ?>
 
 <h2>Edit Project</h2>
-
+<div id="error-messages"></div>
 <form method="post">
   
   <label for="type">Type:</label>
@@ -93,7 +93,7 @@ if( isset( $_GET['id'] ) )
 
 <p><a href="education.php"><i class="fas fa-arrow-circle-left"></i> Return to Certification List</a></p>
 
-
+<script src="./js/validateEducationAdd.js"></script>
 <?php
 
 include( 'includes/footer.php' );

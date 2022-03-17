@@ -66,7 +66,7 @@ if( isset( $_GET['id'] ) )
 ?>
 
 <h2>Edit Project</h2>
-
+<div id="error-messages"></div>
 <form method="post">
   
   <label for="title">Title:</label>
@@ -126,7 +126,7 @@ if( isset( $_GET['id'] ) )
 
 <p><a href="projects.php"><i class="fas fa-arrow-circle-left"></i> Return to Project List</a></p>
 
-
+<script src="./js/validateProjectsAdd.js"></script>
 <?php
 
 include( 'includes/footer.php' );

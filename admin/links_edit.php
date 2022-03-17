@@ -63,7 +63,7 @@ if( isset( $_GET['id'] ) )
 ?>
 
 <h2>Edit Link</h2>
-
+<div id="error-messages"></div>
 <form method="post">
   
   <label for="title">Name:</label>
@@ -82,7 +82,7 @@ if( isset( $_GET['id'] ) )
 
 <p><a href="links.php"><i class="fas fa-arrow-circle-left"></i> Return to Link List</a></p>
 
-
+<script src="./js/validateLinksAdd.js"></script>
 <?php
 
 include( 'includes/footer.php' );
